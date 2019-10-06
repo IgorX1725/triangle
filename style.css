@@ -1,0 +1,32 @@
+body{
+    display: grid;
+    justify-content: center;
+}
+#container{
+    width: 70vw;
+    height: 40vh;
+    display: grid;
+    flex-direction: column;
+    background-color: #DCDCDC;
+    justify-content: center;
+    
+    grid-template-columns:  33.3% 33.3% 33.3%;
+}
+#title{
+    color: blue;
+}
+input{
+    width: 70%;
+    height: 35%;
+    font-size: 30px;
+}
+button{
+    width: 70%;
+    height: 35%;
+    font-size: 30px;
+}
+#mensage{
+    font-size: 30px;
+    color: red;
+}
+
