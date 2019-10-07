@@ -1,5 +1,5 @@
 let container = null
-const mensage = document.createElement('p')
+const message = document.createElement('p')
 let input1 = null
 let input2 = null
 let input3 = null
@@ -38,23 +38,23 @@ function isANumber(){
 function emptyField(){
     container = document.querySelector('#container')
     if(input1 == ''){
-        createMensage("O primeiro lado deve ser informado")
+        createMessage("O primeiro lado deve ser informado")
         return true
     }
     if(input2 == ''){
-        createMensage("O segundo lado deve ser informado")
+        createMessage("O segundo lado deve ser informado")
         return true
     }
     if(input3 == ''){
-        createMensage("O terceiro lado deve ser informado")
+        createMessage("O terceiro lado deve ser informado")
         return true
     }
     return false
 }
-function createMensage(textMensage){
-    mensage.setAttribute('id','mensage')
-    mensage.innerText = textMensage
-    container.appendChild(mensage)
+function createMessage(textMessage){
+    message.setAttribute('id','message')
+    message.innerText = textMessage
+    container.appendChild(message)
 }
 
 function verify(){
@@ -70,17 +70,17 @@ function verify(){
         if(isANumber() == true){
             if(isATriangle() == true){
                 if(equilatero() == true){
-                    createMensage("Triangulo equilatero")
+                    createMessage("Triangulo equilatero")
                 }else if(iscoseles()  == true){
-                    createMensage("Triangulo isosceles")
+                    createMessage("Triangulo isosceles")
                 }else if(escaleno()  == true){
-                    createMensage("Triangulo escaleno")
+                    createMessage("Triangulo escaleno")
                 }
             }else{
-                createMensage("Não é um triangulo")
+                createMessage("Não é um triangulo")
             }
         }else{
-            createMensage("Deve-se inserir somente números nos campos")
+            createMessage("Deve-se inserir somente números nos campos")
         }
     }
 }
