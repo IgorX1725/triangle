@@ -43,7 +43,7 @@ function emptyField(){
     }
     if(input2 == ''){
         createMensage("O segundo lado deve ser informado")
-        true
+        return true
     }
     if(input3 == ''){
         createMensage("O terceiro lado deve ser informado")
