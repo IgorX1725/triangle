@@ -38,15 +38,18 @@ function isANumber(){
 function emptyField(){
     container = document.querySelector('#container')
     if(input1 == ''){
-        createMessage("O primeiro lado deve ser informado")
+        alert("O primeiro lado deve ser informado")
+        createMessage('')
         return true
     }
     if(input2 == ''){
-        createMessage("O segundo lado deve ser informado")
+        alert("O segundo lado deve ser informado")
+        createMessage('')
         return true
     }
     if(input3 == ''){
-        createMessage("O terceiro lado deve ser informado")
+        alert("O terceiro lado deve ser informado")
+        createMessage('')
         return true
     }
     return false
@@ -77,10 +80,12 @@ function verify(){
                     createMessage("Triangulo escaleno")
                 }
             }else{
-                createMessage("Não é um triangulo")
+                alert("Não é um triangulo")
+                createMessage('')
             }
         }else{
-            createMessage("Deve-se inserir somente números nos campos")
+            alert("Deve-se inserir somente números nos campos")
+            createMessage('')
         }
     }
 }
